@@ -1,0 +1,86 @@
+/* Estilos básicos para o formulário */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* --- ATUALIZAÇÃO NO style.css PARA VALIDAÇÃO (ADICIONAR AO FINAL) --- */
+
+/* Estilo para campos inválidos */
+.invalido {
+    border: 2px solid #d9534f !important; /* Borda vermelha para indicar erro */
+    background-color: #fffafa; /* Fundo levemente rosado */
+}
+
+/* Estilo para a mensagem de erro */
+.mensagem-erro {
+    display: block; /* Garante que a mensagem comece em uma nova linha */
+    color: #d9534f; /* Cor vermelha para a mensagem */
+    font-size: 0.85em;
+    margin-top: 5px;
+    font-style: italic;
+    height: 1.2em; /* Reserva espaço para evitar que o layout "pule" */
+}
+
+/* Estilo para o feedback de sucesso */
+.feedback-global {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5bc0de; /* Azul para feedback positivo */
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
